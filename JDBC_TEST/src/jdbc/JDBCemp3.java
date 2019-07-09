@@ -39,6 +39,7 @@ public class JDBCemp3 {
 					System.out.println("부서번호 :"+rs.getInt(8));
 					System.out.println("-----------------------------");
 				};
+				
 				int cnt=stmt.executeUpdate(sql2);
 				if(cnt>0) {
 					System.out.println("스캇아 월급올랐다!");

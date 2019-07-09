@@ -24,10 +24,11 @@ public class JDBCemp2 {
 				String sql1="select * from emp";
 				String sql2="insert into emp values(?,?,?,?,?,?,?,?)";
 				Statement stmt=conn.createStatement();
+				//PreparedStatement 같은 경우는  한 번 사용한 sql문이저장되기떄문에 다시 사용가능
 				PreparedStatement pstmt=conn.prepareStatement(sql2);
 				//사원추가
-				pstmt.setInt(1,7861);
-				pstmt.setString(2,"GUN");
+				pstmt.setInt(1,7862);
+				pstmt.setString(2,"JUN");
 				pstmt.setString(3, "ANALYST");
 				pstmt.setInt(4, 7566);
 				pstmt.setString(5,"2019-07-08");
