@@ -24,7 +24,7 @@ public class JDBCemp {
 				//stmt객체생성 테이블 데이터를 읽어온다
 				Statement stmt=conn.createStatement();
 				System.out.println(stmt+"객체생성");
-				String sql1="select * from emp";
+				String sql1="select * from emp01";
 				  //exequteQuery는 하나의 리절트set을 만드는 셀렉트 문에서 사용
 				  //테이블의 데이터를 불러오고 주로 조회를 위한 용도로 사용
 				  //ResultSet으로 get메소드를 ㅣ용해 조회한다

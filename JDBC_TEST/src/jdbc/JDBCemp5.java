@@ -21,7 +21,7 @@ public class JDBCemp5 {
 				System.out.println("오라클DB 접속");
 				//stmt객체생성 테이블 데이터를 읽어온다
 
-				String sql1="select * from emp where ename='SCOTT'";
+				String sql1="select * from emp01 where ename='SCOTT'";
 			  
 				Statement stmt=conn.createStatement(); 
 			

@@ -21,7 +21,7 @@ public class JDBCemp2 {
 				System.out.println("오라클DB 접속");
 				//stmt객체생성 테이블 데이터를 읽어온다
 
-				String sql1="select * from emp";
+				String sql1="select * from emp01";
 				String sql2="insert into emp values(?,?,?,?,?,?,?,?)";
 				Statement stmt=conn.createStatement();
 				//PreparedStatement 같은 경우는  한 번 사용한 sql문이저장되기떄문에 다시 사용가능
